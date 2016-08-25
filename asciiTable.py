@@ -10,14 +10,14 @@ def main():
 
 
 
-def get_Number(LOWER,UPPER):
+def get_number(LOWER,UPPER):
     try:
-        num = int(input("Enter a number between {}-{}: ".format(LOWER, UPPER)))
-        while num not in range(LOWER,UPPER):
-            num = int(input("Enter a number between {}-{}: ".format(LOWER, UPPER)))
+        inputNum = int(input("Enter a number between {}-{}: ".format(LOWER, UPPER)))
+        while inputNum not in range(LOWER,UPPER):
+            inputNum = int(input("Enter a number between {}-{}: ".format(LOWER, UPPER)))
     except ValueError:
-        print("not a valid integer")
-    return num
+        print("not a valid integer") #help here
+    return inputNum
 
 main()
 
